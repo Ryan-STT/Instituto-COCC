@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="demoday.css">
+    <title>DemoDay Grupo 11</title>
+</head>
+<body>
+    <div class="container-fluid">
+
+        <!--TEXTO INTRODUÇÃO-->
+
+        <div class="alert alert-success text-center1" role="alert">
+            <h1 class="text-center mt-2 mb-4 bem">BEM-VINDO!</h1>
+            <p class="text-center bemm">O grupo 11 os convida a conhecer os principais pontos para melhor entendimento sobre nosso desenvolvimento nesse processo. Além disso, se direcionar a informações importantes como nosso código, e também conhecer mais sobre nossa equipe e entrar em contato conosco</p>
+        </div>
+
+        <!--FIM DO TEXTO INTRODUÇÃO-->
+
+        <!--ICONES PARA DIRECIONAMENTO-->
+
+        <div class="row icones">
+            <div class="col-sm text-center">
+                <button class="efeito-botao-botao"><img src="https://img.icons8.com/bubbles/220/000000/github.png"/></button> <br> <!--ICONE GITHUB-->
+                <abbr title="CLIQUE AQUI PARA VER O CÓDIGO COMPLETO"> <!--DESCRIÇÃO-->
+                    <button type="button" class="btn btn-primary btn-sm aparecer" data-toggle="modal" data-target="#ExemploModalCentralizado">SAIBA MAIS</button> <!--BOTÃO MODAL-->
+                </abbr>
+                <button type="button" class="btn btn-primary btn-sm hide" data-toggle="modal" data-target="#ExemploModalCentralizado">GITGUB</button> <!--BOTÃO MODA DESCRITIVO TELAS PEQUENAS-->
+            </div>
+            <div class="col-sm text-center">
+                <button class="efeito-botao-botao"><img src="https://img.icons8.com/bubbles/220/000000/linkedin.png"/></button> <br> <!--ICONE LINKEDIN-->
+                <abbr title="CLIQUE AQUI PARA SABER MAIS SOBRE OS MEMBROS"> <!--DESCRIÇÃO-->
+                    <button type="button" class="btn btn-primary btn-sm aparecer" data-toggle="modal" data-target="#ExemploModalCentralizado1">SAIBA MAIS</button> <!--BOTÃO MODAL-->
+                </abbr>
+                <button type="button" class="btn btn-primary btn-sm hide" data-toggle="modal" data-target="#ExemploModalCentralizado1">LINKEDIN</button> <!--BOTÃO MODA DESCRITIVO TELAS PEQUENAS-->
+            </div>
+            <div class="col-sm text-center">
+                <button class="efeito-botao-botao"><img src="https://img.icons8.com/bubbles/220/000000/news.png"/></button> <br> <!--ICONE CONTEÚDO-->
+                <abbr title="CLIQUE AQUI PARA VER DADOS DA APRESENTAÇÃO"> <!--DESCRIÇÃO-->
+                    <button type="button" class="btn btn-primary btn-sm aparecer" data-toggle="modal" data-target="#ExemploModalCentralizado3">SAIBA MAIS</button> <!--BOTÃO MODAL-->
+                </abbr>
+                <button type="button" class="btn btn-primary btn-sm hide" data-toggle="modal" data-target="#ExemploModalCentralizado3">CONTEUDO INFORMATIVO</button> <!--BOTÃO MODA DESCRITIVO TELAS PEQUENAS-->
+            </div>
+            <div class="col-sm text-center">
+                <button class="efeito-botao-botao"><img src="https://img.icons8.com/bubbles/220/000000/instagram-new.png"/></button> <br> <!--ICONE INSTAGRAM-->
+                <abbr title="CLIQUE AQUI PARA VER NOSSO INSTAGRAM E APOIAR NOSSO PROJETO"> <!--DESCRIÇÃO-->
+                    <button type="button" class="btn btn-primary btn-sm aparecer" data-toggle="modal" data-target="#ExemploModalCentralizado4">SAIBA MAIS</button> <!--BOTÃO MODAL-->
+                </abbr>
+                <button type="button" class="btn btn-primary btn-sm hide" data-toggle="modal" data-target="#ExemploModalCentralizado4">INSTAGRAM DO COCC</button> <!--BOTÃO MODA DESCRITIVO TELAS PEQUENAS-->
+            </div>
+        </div>
+
+        <!--FIM DOS ICONES PARA DIRECIONAMENTO-->
+
+    </div>
+
+    <!--MODAL-->
+
+    <div class="area">
+
+        <!--MODAL GITHUB-->
+
+        <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header mx-auto">
+                        <h5 class="modal-title" id="TituloModalCentralizado">CÓDIGO</h5>
+                    </div>
+                    <div class="modal-body text-center mt-2">
+                        <p>O COCC (Centro de Oportunidade Cultural à Criança) é um projeto desenvolvido em Java com o propósito de criar um site para crianças de 5 a 12 anos com conteúdo cultural de músicas, livros, desenhos, jogos etc. O projeto é estruturado em HTML5, CSS3, Java e JavaScript com DataBase MySQL</p>
+                    </div>
+                    <div class="modal-footer mx-auto">
+                        <div class="row">
+                            <div class="col-12 text-center mb-1">
+                                <a href="https://github.com/Ryan-STT/DemodayCocc" class="btn btn-primary btn-lg active mt-3" role="button" aria-pressed="true">CLIQUE AQUI</a>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="button" class="btn btn-secondary mb-3" data-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--FIM DO MODAL GITHUB-->
+
+        <!--MODAL LINKEDIN-->
+
+        <div class="modal fade" id="ExemploModalCentralizado1" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header mx-auto">
+                        <h5 class="modal-title text-center" id="TituloModalCentralizado">LINKEDIN</h5>
+                    </div>
+                    <div class="modal-body text-left">
+                        <p>Todos os membros da equipe contribuíram em conjunto para realizar o projeto, aqui você pode conhecer um pouco mais nosso lado profissional e entrar em fullstack</p>
+                        <hr>
+                        <p class="pe mb-3 text-center">MEMBROS</p> <!--LINKEDIN DOS MEMBROS-->
+                        <p>
+                            Gabriel Naves Cara - <a href="https://www.linkedin.com/in/gabriel-naves1/">Linkedin</a>
+                            <br>
+                            João Vitor Alves Lobato - <a href="https://www.linkedin.com/in/joao-vitor-alves-lobato-da-silva/">Linkedin</a>
+                            <br>
+                            Juliany Aparecida De Almeida - <a href="https://www.linkedin.com/in/juliany-aparecida-de-almeida-liber-18aa73177/">Linkedin</a>
+                            <br>
+                            Murilo Souza Silva - <a href="https://www.linkedin.com/in/murilo-souza-/">Linkedin</a>
+                            <br>
+                            Thaina Lima Matos - <a href="https://www.linkedin.com/in/thaina-lima-matos/">Linkedin</a>
+                            <br>
+                            Olavo Nardari Leandro - <a href="https://www.linkedin.com/in/olavo-leandro-14220a1b1/">Linkedin</a>
+                            <br>
+                            Ryan De Souza Tomaz - <a href="https://www.linkedin.com/in/ryan-souza">Linkedin</a>
+                            <br>
+                            Vinicius Gripp Ribeiro - <a href="https://www.linkedin.com/in/vin%C3%ADcius-gripp/">Linkedin</a>
+                            <br>
+                        </p>
+                    </div>
+                    <div class="modal-footer mx-auto">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <button type="button" class="btn btn-secondary mb-3 mt-3" data-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--FIM DO MODAL LINKEDIN-->
+
+        <!--MODAL DOS CONTEÚDOS DO SLIDE-->
+
+        <div class="modal fade" id="ExemploModalCentralizado3" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header mx-auto">
+                        <h5 class="modal-title text-center" id="TituloModalCentralizado">APOIADORES & INFORMAÇÕES</h5>
+                    </div>
+                        <div class="modal-body text-justify">
+                            <p>Em base nas nossas pesquisas, podemos ver quantos conteúdos encontramos na internet, mas muito deles não são apropriados ou agregam algo para o futuro de nossas crianças, pensando nisso, fomos em busca de profissionais da área infantil para apresentar nosso projeto e receber feedbacks, para assim seguir um caminho correto e direto para o desenvolvimento infantil com ainda mais qualidade. Além disso, manter os pais confiantes do nosso trabalho e propósito, pois todo o conteúdo disponivel para seus filhos irá passar por uma fase de avaliação</p>
+                            <p class="text-center pe">⇢ PEDAGOGA - <a href="https://drive.google.com/file/d/1Jhw93eQ60ttUKV7zoflZmcOGtuMYxHQ-/view?usp=sharing">CLIQUE AQUI</a></p>
+                            <hr>
+                            <p class="text-justify">Ademais, notamos como essa decisão foi importante ao nos depararmos com a triste notícia do desafio do tik tok que acabou no falecimento de uma criança por falta de supervisão</p>
+                            <p class="text-center pe">⇢ MÁTERIA - <a href="https://istoe.com.br/menino-de-12-anos-que-participou-de-desafio-no-tiktok-morre-apos-tres-semanas-internado/">CLIQUE AQUI</a></p>
+                        </div>
+                        <div class="modal-footer mx-auto">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <button type="button" class="btn btn-secondary mb-3 mt-3" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--MODAL DOS CONTEÚDOS DO SLIDE-->
+
+        <!--MODAL INSTAGRAM-->
+
+        <div class="modal fade" id="ExemploModalCentralizado4" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header mx-auto">
+                        <h5 class="modal-title text-center" id="TituloModalCentralizado">INSTAGRAM</h5>
+                    </div>
+                    <div class="modal-body text-center mt-2">
+                        <p>CRIAMOS UMA PÁGINA NO INSTAGRAM PARA SER UM MEIO DE DIVULGAÇÃO DO NOSSO SITE, E TAMBÉM PARA TERMOS MAIS VISIBILIDADE E CONSEGUIRMOS APOIADORES PARA QUE NOSSO SITE CRESÇA E ATINJA CADA VEZ MAIS CRIANÇAS</p>
+                    </div>
+                    <div class="modal-footer mx-auto">
+                        <div class="row">
+                            <div class="col-12 text-center mb-1">
+                                <a href="https://www.instagram.com/instituto_cocc/" class="btn btn-primary btn-lg active mt-3" role="button" aria-pressed="true">CLIQUE AQUI</a>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="button" class="btn btn-secondary mb-3" data-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--MODAL INSTAGRAM-->
+    
+    <!--FIM DO MODAL-->
+    
+    </div>
+
+    <!--INFORMAÇÕES SOBRE A EQUIPE-->
+
+    <div class="container-fluid">
+        <div class="card fora text-center mb-5">
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="cocc-tab" data-toggle="tab" href="#cocc" role="tab" aria-controls="cocc" aria-selected="true">COCC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="backend-tab" data-toggle="tab" href="#backend" role="tab" aria-controls="backend" aria-selected="true">BACK-END</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#frontend" role="tab" aria-controls="frontend" aria-selected="false">FRONT-END</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#fullstack" role="tab" aria-controls="fullstack" aria-selected="false">FULLSTACK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#holders" role="tab" aria-controls="mentores" aria-selected="false">MENTORES</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="cocc" role="tabpanel" aria-labelledby="cocc-tab">
+                    <img class="img-fluid eqp" src="img/equipe.jpg" alt="imagem da equipe">
+                    <h1 class="cocc">O projeto foi criado com a intenção de levar conteúdo de qualidade nesse período de pandemia para as crianças se manterem dentro de suas casas, se divertindo enquanto aprendem. Porém, mesmo após esse período pandemico continuaremos levando entretenimento cultural e educacional para as crianças conhecerem e reviverem suas raízes culturais</h1>
+                </div>
+                <div class="tab-pane fade" id="backend" role="tabpanel" aria-labelledby="backend-tab">
+                    <div class="card-deck mt-3 mb-3 ml-3 mr-3">
+                        <div class="card fotos">
+                            <img class="card-img-top img-fluid" src="img/Team/Juliany Aparecida de Almeida Liber.jpg" alt="Imagem de capa Juliany Aparecida">
+                            <div class="card-body">
+                                <h5 class="card-title">JULIANY APARECIDA</h5>
+                                <p class="card-text" id="juh">Olá! Sou a Juliany.<span id="pontosjuh">...</span><span class="maistexto" id="saibamaisjuh"><br> Tenho 18 anos e estou cursando o 2°semestre da faculdade de economia, sou aluna do Instituto proa 1/2021 que foi o lugar que tive contato pela primeira vez com a área de tecnologia e que aprendi  muito.Já fui jovem aprendiz durante dois anos na Caixa Econômica Federal onde me apaixonei pelas instituições financeiras por isso escolhi cursar economia. Oque eu mais gosto de fazer no meu tempo livre é assistir filmes, séries e ler livros de romances, gosto de sair com meus amigos, ficar com meus familiares e com a minha cachorra e viajar.</span></p>
+                                <br>
+                                <button type="button" class="btn btn-outline-secondary mb-4" id="saibamais1" onclick="saibamais1()">SAIBA MAIS</button>
+                            </div>
+                        </div>
+                        <div class="card fotos">
+                            <img class="card-img-top img-fluid" src="img/Team/Olavo Nardari Leandro.jpg" alt="Imagem de capa Olavo Nardari">
+                            <div class="card-body">
+                                <h5 class="card-title">OLAVO NARDARI</h5>
+                                <p class="card-text">Olá! Sou o Olavo.<span id="pontosolavo">...</span><span class="maistexto" id="saibamaisolavo"><br> Tenho 18 anos e sou uma pessoa que tem muitos planos para o futuro, e um deles seria morar em Portugal. Entrei no ramo de programação por acaso, mas me encaixei muito bem nessa área e pretendo crescer na mesma seguindo como desenvolvedor web e/ou front-end. Minha maior paixão nessa vida seria escrever, tanto é que um dos meus maiores projetos para o futuro seria me tornar um escritor. Pessoas que não sonham são pessoas vazias, afinal. Nunca perca a oportunidade de sonhar porque é isso que nos move!</span></p>
+                                <button type="button" class="btn btn-outline-secondary mb-4" id="saibamais2" onclick="saibamais2()">SAIBA MAIS</button>
+                            </div>
+                        </div>
+                        <div class="card fotos">
+                            <img class="card-img-top img-fluid" src="img/Team/Vinícius Gripp Ribeiro.jpg" alt="Imagem de capa Vinícius Gripp">
+                            <div class="card-body">
+                                <h5 class="card-title">VINÍCIUS GRIPP</h5>
+                                <p class="card-text">Olá! Sou o Vinícius.<span id="pontosgripp">...</span><span class="maistexto" id="saibamaisgripp"><br> Tenho 19 anos e moro em São Bernardo do Campo. Amo jogar videogame, assistir uma série e com principalmente ouvir uma boa música, aliás rap melhor gênero ok? (Por mais que eu todos os gêneros musicais possíveis). Sobre meus planos, eu pretendo iniciar na área de programação, conseguir experiência, iniciar minha faculdade de ADS ou Sistema de Informação e após isso, conseguir um emprego fora do país.</span></p>
+                                <button type="button" class="btn btn-outline-secondary mb-4" id="saibamais3" onclick="saibamais3()">SAIBA MAIS</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="frontend" role="tabpanel" aria-labelledby="front-end-tab">
+                    <div class="tab-pane fade show active" id="backend" role="tabpanel" aria-labelledby="frontend-tab">
+                        <div class="card-deck mt-3 mb-3 ml-3 mr-3">
+                            <div class="card fotos">
+                                <img class="card-img-top img-fluid" src="img/Team/João Vitor Alves Lobato da Silva.jpg" alt="Imagem de capa João Vitor">
+                                <div class="card-body">
+                                    <h5 class="card-title">JOÃO VITOR</h5>
+                                    <p class="card-text">Olá! Sou o João.<span id="pontoseevee">...</span><span class="maistexto" id="saibamaiseevee"><br> Bom dia, boa tarde e boa noite, tudo bem? Me chamo João Vitor, dono do canal “Cafofo do eevee” e dos perfis do Instagram @Alem_desse_universo e @Kit_sune200, tenho 19 anos, moro na cidade de São Paulo. Sou apaixonado em escrever uma boa história ou um pequeno texto, ler um bom livro, mestrar RPG (role-playing game) para meus amigos, jogar com eles, fazer edições de foto e vídeos. E claro! Sair com os amigos e me divertir com eles. Sou naturalmente curioso com uma sede insaciável por conhecer coisas novas, assumidamente gay, mestre na criatividade, extrovertido e muito amigável com todos. Além, de um sonhador acordado que gosta de levar os projetos a sério. Futuramente, gostaria de trabalhar com a internet trazendo felicidade para as pessoas, é gratificante ver o sorriso e ouvir delas o quanto se sentem bem por um projeto já feito por mim.</span></p>
+                                    <button type="button" class="btn btn-outline-secondary mb-4" id="saibamais4" onclick="saibamais4()">SAIBA MAIS</button>
+                                </div>
+                            </div>
+                            <div class="card fotos">
+                                <img class="card-img-top img-fluid" src="img/Team/Murilo Souza Silva.jpg" alt="Imagem de capa Murilo Souza">
+                                <div class="card-body">
+                                    <h5 class="card-title">MURILO SOUZA</h5>
+                                    <p class="card-text">Olá! Sou o Murilo.<span id="pontosmurilo">...</span><span class="maistexto" id="saibamaismurilo"><br> Tenho 18 anos e desejo para meu futuro o quanto mais paz e fé melhor, focado na minha área de programação e conquistado todo os meus sonhos e desejos de ter uma família e condições maravilhosas.</span></p>
+                                    <button type="button" class="btn btn-outline-secondary mb-4" id="saibamais5" onclick="saibamais5()">SAIBA MAIS</button>
+                                </div>
+                            </div>
+                            <div class="card fotos">
+                                <img class="card-img-top img-fluid" src="img/Team/Thaina Lima Matos.jpg" alt="Imagem de capa Thaina Lima">
+                                <div class="card-body">
+                                    <h5 class="card-title">THAINA LIMA</h5>
+                                    <p class="card-text">Olá! Sou a Thaina.<span id="pontostata">...</span><span class="maistexto" id="saibamaistata"><br> Tenho 18 anos e meu hobby favorito é cozinhar. O meu interesse pela tecnologia surgiu quando eu estava no meu terceiro ano do ensino médio, e o PROA foi uma oportunidade de entender mais sobre a área da programação e desenvolver novas habilidades, além de ter mostrado o meu lugar, que sem dúvidas, é na programação. Atualmente, estou em busca de iniciar a faculdade de Sistemas de Informação, onde meu foco é conseguir um emprego como desenvolvedora Front-end Jr, em uma empresa, em que eu possa aprimorar minhas experiências e aprender constantemente.</span></p>
+                                    <button type="button" class="btn btn-outline-secondary mb-4" id="saibamais6" onclick="saibamais6()">SAIBA MAIS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="fullstack" role="tabpanel" aria-labelledby="fullstack-tab">
+                    <div class="tab-pane fade show active" id="backend" role="tabpanel" aria-labelledby="fullstack-tab">
+                        <div class="card-deck mt-3 mb-3 ml-3 mr-3">
+                            <div class="card fotos">
+                                <img class="card-img-top img-fluid" src="img/Team/Gabriel Naves Cara Pereira.jpg" alt="Imagem de capa Gabriel Naves">
+                                <div class="card-body">
+                                    <h5 class="card-title">GABRIEL NAVES</h5>
+                                    <p class="card-text">Olá! Sou o Gabriel.<span id="pontosnaves">...</span><span class="maistexto" id="saibamaisnaves"><br> Tenho 18 anos, gosto muito de jogar videogames , assistir séries e desenhar. Meu foco profissional é ser um programador Full stack, pretendo cursar análise e desenvolvimento de sistemas, quero também fazer cursos de desenvolvimento de jogos.</span></p>
+                                    <button type="button" class="btn btn-outline-secondary mb-4" id="saibamais7" onclick="saibamais7()">SAIBA MAIS</button>
+                                </div>
+                            </div>
+                            <div class="card fotos">
+                                <img class="card-img-top img-fluid" src="img/Team/Ryan de Souza Tomaz.jpg" alt="Imagem de capa Ryan De Souza">
+                                <div class="card-body">
+                                    <h5 class="card-title">RYAN DE SOUZA</h5>
+                                    <p class="card-text">Olá! Sou o Ryan.<span id="pontosryan">...</span><span class="maistexto" id="saibamaisryan"><br> Tenho 19 anos, estou cursando o 2° semestre da faculdade de análise e desenvolvimento de sistemas, sou aluno do instituto proa onde pude encontrar meu grande amor pela a área de tecnologia e desenvolvimento. Atualmente meu foco é atuar como fullstack em desenvolvimento WEB com linguagens de PHP e JAVA investindo de forma contínua no meu aprendizado na área de tecnologia, e também, em biologia, que sempre foi meu sonho desde criança, na tentativa de unir ambas. Busco por uma empresa que possa me proporcionar experiência profissional. Por outro lado, sou uma pessoa extrovertida, curiosa, amante de música e dança, além de gostar de conversar, ver séries, sair, viajar e amo passar o tempo com minha cachorra, proporcionando o máximo de memórias possíveis, curtindo da melhor maneira.</span></p>
+                                    <button type="button" class="btn btn-outline-secondary mb-4" id="saibamais8" onclick="saibamais8()">SAIBA MAIS</button>
+                                </div>
+                            </div>
+                            <div class="card unico">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="holders" role="tabpanel" aria-labelledby="holders-tab">
+                    <div class="tab-pane fade show active" id="backend" role="tabpanel" aria-labelledby="holders-tab">
+                        <div class="card-deck mt-3 mb-3 ml-3 mr-3">
+                            <div class="card fotos">
+                                <img class="card-img-top img-fluid" src="img/Team/Juliana Boin.jpeg" alt="Imagem de capa Juliana Boin">
+                                <div class="card-body">
+                                    <h5 class="card-title">JULIANA BOIN</h5>
+                                    <p class="card-text">Olá! Sou a Juliana<span id="pontosjuliana">...</span><span class="maistexto" id="saibamaisjuliana"><br> Tivemos 5 encontros com a mentora Juliana, que nos auxíliou nas terças feiras das 13:00 às 14:00 contribuindo com ideias e opiniões construtivas que ajudaram no nosso projeto</span></p>
+                                    <button type="button" class="btn btn-outline-secondary mb-4" id="saibamais9" onclick="saibamais9()">SAIBA MAIS</button>
+                                </div>
+                            </div>
+                            <div class="card fotos">
+                                <img class="card-img-top img-fluid" src="img/Team/Guilherme Bodra.jpg" alt="Imagem de capa Guilherme Bodra">
+                                <div class="card-body">
+                                    <h5 class="card-title">GUILHERME BODRA</h5>
+                                    <p class="card-text">Olá! Sou o Guilherme<span id="pontosbodra">...</span><span class="maistexto" id="saibamaisbodra"><br> Professor Guilherme nos auxiliou em toda a parte de back e front-end, além disso no banco de dados. Sempre apontando onde poderíamos melhorar, contribuindo com seu conhecimento para aprimorar nosso projeto</span></p>
+                                    <button type="button" class="btn btn-outline-secondary mb-4" id="saibamais10" onclick="saibamais10()">SAIBA MAIS</button>
+                                </div>
+                            </div>
+                            <div class="card fotos">
+                                <img class="card-img-top img-fluid" src="img/Team/Wesley Linares.jpeg" alt="Imagem de capa Wesley Linares">
+                                <div class="card-body">
+                                    <h5 class="card-title">WESLEY LINARES</h5>
+                                    <p class="card-text">Olá! Sou o Wesley<span id="pontoswesley">...</span><span class="maistexto" id="saibamaiswesley"><br> Wesley foi nosso professor no Projeto Profissional e no Projeto Integrador, sempre compartilhando seu conhecimento e nos auxiliando desdo início do curso que teve início em março até o final da nossa trajetória do proa</span></p>
+                                    <button type="button" class="btn btn-outline-secondary mb-4" id="saibamais11" onclick="saibamais11()">SAIBA MAIS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="demoday.js"></script>
+</body>
+</html>
